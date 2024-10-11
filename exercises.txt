@@ -1,0 +1,23 @@
+Exercise 1: Create a library management system that tracks books, their availability, and the borrowers.
+Instructions:
+1. Create a dictionary called `library` where each key is a book title (string) and the value is another dictionary containing:
+  - `author` (string): The author of the book.
+  - `year` (int): The publication year.
+  - `available` (bool): Indicates if the book is available for borrowing.
+  - `borrower` (string or None): The name of the person who borrowed the book, or `None` if it's available.
+2. Write a function `add_book(title, author, year)` that adds a new book to the library.
+3. Write a function `borrow_book(title, borrower)` that allows a user to borrow a book if it's available. If the book is not available, the function should indicate that.
+4. Write a function `return_book(title)` that allows a user to return a borrowed book and updates its status accordingly.
+5. Write a function `search_books_by_author(author)` that returns a list of all books by a specified author.
+
+Exercise 2: Create an event management system to manage various events, their attendees, and event details.
+Instructions:
+1. Create a dictionary called `events` where each key is an event name (string) and the value is another dictionary containing:
+  - `date` (string): The date of the event.
+  - `location` (string): The location of the event.
+  - `attendees` (list of strings): Names of people attending the event.
+  - `max_attendees` (int): The maximum number of attendees allowed.
+2. Write a function `register_attendee(event_name, attendee_name)` that registers an attendee for an event if there's space available.
+3. Write a function `unregister_attendee(event_name, attendee_name)` that allows an attendee to unregister from an event.
+4. Write a function `get_event_details(event_name)` that returns the event details, including the number of attendees and the maximum capacity.
+5. Write a function `list_all_events()` that returns a list of all events along with their details.
